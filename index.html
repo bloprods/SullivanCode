@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Inicio</title>
+        <link rel="icon" type="image/x-icon" href="./img/mainIcon.ico">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/common.js"></script>
+        <script src="js/slideshow.js"></script>
+    </head>
+
+    <body>
+        
+        <button id="openbtn" class="openbtn" onclick="openNav()">☰</button>
+
+        <aside id="sidebar" class="sidebar">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+            <h2 class="subtitle">CREADO POR</h2>
+                    
+                <div class="perfilGit">
+                    <div class="perfilFoto">
+                        <a title="BLR Github Account" target="_blank" href="https://github.com/bloprods"><img src="./img/github.png" alt="Github Logo"/></a>
+                    </div>
+                    <div class="perfilNombre">
+                        <p class="sideContent" >
+                            Bruno López Rodríguez
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="perfilGit">
+                    <div class="perfilFoto">
+                        <a title="SGR Github Account" target="_blank" href="https://github.com/salvadocs"><img src="./img/github.png" alt="Github Logo"/></a>
+                    </div>
+                    <div class="perfilNombre">
+                        <p class="sideContent" >
+                            Salvador García Rodríguez
+                        </p>
+                    </div>
+                </div>
+        </aside>
+        
+        <header id="mainHeader">
+            <h1 class="mainTitle">Sullivan Code</h1>
+        </header>
+
+        <div class="mainHeader">
+
+            <nav id="navigationMenu" class="navigationMenu">
+                
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="../CSS3/css3.html">JavaScript</a></li>
+                    <li><a href="../HTML5/html5.html">Framework JS</a>
+                        <ul class="submenu">
+                            <li class="backgrounds"><a href="../HTML5/html5.html#section1">React JS</a></li>
+                            <li class="backgrounds"><a href="../HTML5/html5.html#section2">Express JS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../BDT/DevTools.html">Bootstrap</a></li>
+                    <li><a href="../VSCode/vscode.html">JQuery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <h1 id="title" class="title"></h1>
+        </div>
+        
+        <section id="container" class="container">
+            <article class="section">
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <img class="imgslideshow" src="img/javascript.jpg">
+                    <div class="text">JavaScript</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img class="imgslideshow" src="img/bootstrap.png">
+                    <div id="bootstrapslide" class="text">Bootstrap</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img class="imgslideshow" src="img/tutoriales-jquery.jpeg">
+                    <div class="text">JQuery</div>
+                    </div>
+                    
+                </div>
+
+                    <br>
+                    
+                    <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    </div>
+                
+            </article>
+
+            <article class="section">
+                <h1>Organización del trabajo</h1>
+
+                <table id="tables">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="cell1"></th>
+                            <th scope="col">Index</th>
+                            <th scope="col">JavaScript</th>
+                            <th scope="col">React JS</th>
+                            <th scope="col">Express JS</th>
+                            <th scope="col">Bootstrap</th>
+                            <th scope="col">JQuery</th>
+                            <th scope="col">Diseño</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><span>Bruno López Rodríguez</span></th>
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/cross.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/cross.png"/></td> 
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                        </tr>	
+                        <tr>
+                            <th scope="row"><span>Salvador García Rodríguez</span></th>
+                            <td><img alt="Done" scope="row" src="./img/cross.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/cross.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                            <td><img alt="Done" scope="row" src="./img/cross.png"/></td>
+                            <td><img alt="Done" scope="row" src="./img/checkmark.png"/></td>  
+                        </tr>					
+                    </tbody>
+                </table>
+
+            </article>
+
+            <article class="section">
+
+                <h1>Dónde nos encontramos</h1>
+                <div  class="center">
+                    <p>
+                        </br>
+                        Nos puedes encontrar en I.E.S El Majuelo (Gines).
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.030192656824!2d-6.072631484381044!3d37.38911824202593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1213525f4743e5%3A0x21ceb607bb8bb7fa!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20El%20Majuelo!5e0!3m2!1ses-419!2ses!4v1642360112129!5m2!1ses-419!2ses"  allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </article>
+
+        </section>
+
+        <footer id="mainFooter">
+    
+            <div class="footerSection">
+                <h3>Sullivan Code</h3>
+                <p>All rights reserved 2022</p>
+            </div>
+
+
+            <div class="footerSection">
+                <h3>Tecnologías usadas en la web</h3>
+
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img alt="html5 image" src="./img/html5.svg"/></a></li>
+                    <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank"><img alt="css3 image"  src="./img/css3.svg"/></a></li>
+                    <li><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank"><img alt="javascript image" src="./img/javascript.svg"></a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footerSection">
+                <h3>Licenciado bajo Creative Commons</h3>
+
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons License Non comercial attribution 4.0 International</a>
+
+            </div>
+
+        </footer>
+
+    </body>
+</html>
