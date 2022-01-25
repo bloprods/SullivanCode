@@ -1,3 +1,4 @@
+
 /*aside*/
 
 .authorsContent
@@ -125,7 +126,7 @@
   position: relative;
   margin: auto;
   display:block; 
-
+  z-index: 2;
 }
 
 /* Caption text */
@@ -175,4 +176,13 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+h1.titleindex
+{
+    margin-left: 350px;
+    text-align:center;
+    clear: both;
+    color: #1F2839;
+    transition: 0.5s;
 }
