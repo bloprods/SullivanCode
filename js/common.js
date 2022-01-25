@@ -30,26 +30,3 @@ function closeNav() {
     document.getElementById("navigationMenu").style.marginLeft = "0px";
 }
 
-function openSection(id) {
-    var colp = document.getElementById(id);
-
-    if(colp.offsetHeight == 40) {
-        colp.style.height = "100%";
-    } else {
-        colp.style.height = "20px";
-    }
-}
-
-function opentable() {
-    var tab = document.getElementById("commandsTable");
-
-    if(tab.style.display == 'none') {
-        document.getElementById("buttonCloseTable").innerText = "Close Table";
-        document.getElementById("docLink").style.display = "block";
-        tab.style.display = "table";
-    } else {
-        document.getElementById("buttonCloseTable").innerText = "Open Table";
-        document.getElementById("docLink").style.display = "none";
-        tab.style.display = "none";
-    }
-}

@@ -30,7 +30,8 @@ header
 h1.mainTitle
 {
     text-align:center;
-    font-size: 42px;
+    font-size: 55px;
+    font-weight: bold;
     clear: both;
     padding-top: 30px;
     color: #1F2839;
@@ -42,7 +43,8 @@ h1.title
     margin-left: 350px;
     text-align:center;
     clear: both;
-    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 35px;
     color: #1F2839;
     transition: 0.5s;
 }
@@ -143,7 +145,7 @@ h1.title
     width: 350px;
     padding-top: 50px;
     margin-right: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 1;
     transition: 0.5s;
     background: #1F2839;
@@ -168,7 +170,8 @@ h2.subtitle
 .sideContent
 {
     height: 20px;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 14px;
     padding-left: 10px;
     margin-left: 10px;
 }
@@ -259,6 +262,7 @@ h2.subtitle
     background:  #D6D5D5;
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .section>h1
@@ -327,14 +331,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 3%;
-}
-
-.floatright{
-    float: right;
-}
-
-.floatleft{
-    float: left;
+    overflow: hidden;
 }
 
 footer img:hover{
@@ -356,3 +353,4 @@ footer div{
     padding-top: 3%;
     padding-right: 23%;
 }
+
