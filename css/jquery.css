@@ -1,5 +1,7 @@
 .code {
     background-color: #E3E2E2;
+    border-left: 6px solid #005282;
+    padding: 12px;
 }
 .comment {
     font-style: italic;

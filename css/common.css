@@ -394,3 +394,6 @@ li {
     line-height: 170%;
 }
 
+.bold {
+    font-weight: 900;
+}
