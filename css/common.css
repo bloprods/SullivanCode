@@ -321,16 +321,15 @@ article
 
 footer{
     margin-left: 350px; 
-    margin-bottom: 0;
     height: 220px;
     background-color: #1F2839;
     color: white;
     transition: 0.5s;
     flex-direction: row;
     padding-left: 5%;
+    padding-bottom: 6%;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 3%;
     overflow: hidden;
 }
 
@@ -354,3 +353,39 @@ footer div{
     padding-right: 23%;
 }
 
+/*tablas*/
+table {
+    border-collapse: collapse;
+    margin: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #b69d74;
+    border-radius: 30px;
+    
+  }
+  
+td, th {
+    border: 1px #b69d74;
+    padding: 20px;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2;}
+  
+tr:hover {background-color: #ddd;}
+  
+th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1F2839;
+    color: white;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+  
+li {
+    line-height: 170%;
+}
