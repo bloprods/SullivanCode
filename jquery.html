@@ -201,9 +201,9 @@
                 </p>
                 
                 <p class="code">
-                    $(<span class="parameter">"#tablaAlumnos"</span>); <span class="comment">// Devolverá el elemento con id="tablaAlumnos"</span>
+                    $(<span class="string_parameter">"#tablaAlumnos"</span>); <span class="comment">// Devolverá el elemento con id="tablaAlumnos"</span>
                     <br>
-                    $(<span class="parameter">".activo"</span>);&emsp;&emsp;&emsp;&emsp;&ensp; <span class="comment">// Devolverá una matriz de elementos con class="activo"</span>
+                    $(<span class="string_parameter">".activo"</span>);&emsp;&emsp;&emsp;&emsp;&ensp; <span class="comment">// Devolverá una matriz de elementos con class="activo"</span>
                 </p>
                 <p>
                     Una vez obtenidos los nodos, se les puede aplicar cualquiera de las funciones que facilita la biblioteca.
@@ -211,7 +211,7 @@
                 <p class="code">
                     <span class="comment">// Se elimina el estilo (con removeClass()) y se aplica uno nuevo (con addClass()) a todos los nodos con class="activo"</span>
                     <br>
-                    $(<span class="parameter">".activo"</span>).removeClass(<span class="parameter">"activo"</span>).addClass(<span class="parameter">"inactivo"</span>);
+                    $(<span class="string_parameter">".activo"</span>).removeClass(<span class="string_parameter">"activo"</span>).addClass(<span class="string_parameter">"inactivo"</span>);
                 </p>
                 <p>
                     O por ejemplo, efectos gráficos:
@@ -219,7 +219,7 @@
                 <p class="code">
                     <span class="comment">// Anima todos los componentes con class="activo"</span>
                     <br>
-                    $(<span class="parameter">".activo"</span>).slideToggle(<span class="parameter">"slow"</span>);
+                    $(<span class="string_parameter">".activo"</span>).slideToggle(<span class="string_parameter">"slow"</span>);
                 </p>
                 <h2>Inicio de jQuery</h2>
                 <p>
