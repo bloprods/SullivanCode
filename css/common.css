@@ -49,6 +49,10 @@ h1.title
     transition: 0.5s;
 }
 
+h2 {
+    color: #1F2839;
+    transition: 0.5s;
+}
 
 
 .mainHeader
@@ -389,3 +393,4 @@ td{
 li {
     line-height: 170%;
 }
+

@@ -1,0 +1,17 @@
+.code {
+    background-color: #E3E2E2;
+}
+.comment {
+    font-style: italic;
+    color: #408080;
+}
+.string_parameter {
+    color: #BA2121;
+}
+.var_parameter {
+    color: #008000;
+}
+.function {
+    color: #008050;
+    font-weight: bold;
+}
