@@ -5,114 +5,322 @@
         <meta charset="utf-8">
         <title>React JS</title>
         <link rel="icon" type="image/x-icon" href="./img/mainIcon.ico">
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/bootsrap.css">
-        <script src="js/common.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
     </head>
 
     <body>
-        
-        <button id="openbtn" class="openbtn" onclick="openNav()">☰</button>
-
-        <aside id="sidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-            <h2 class="subtitle">CONTENIDO</h2>
-            <p class="sideContent" >
-                <a href="#section1">- Section 1</a><br/>
-            </p>
-            <p class="sideContent" >
-                <a href="#section2">- Section 2</a><br/>
-            </p>
     
-            <p class="sideContent">
-                <a href="#section3">- Section 3</a><br/>
-            </p>
-            <p class="sideContent"> 
-                <a href="#section4">- Section 4</a><br/>
-            </p>
-    
-            <p class="sideContent">
-                <a href="#section5">- Section 5</a><br/>
-            </p>
-        </aside>
-        
-        <header id="mainHeader">
-            <h1 class="mainTitle">Sullivan Code</h1>
-        </header>
-
-        <div class="mainHeader">
-
-            <nav id="navigationMenu" class="navigationMenu">
-                
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./javascript.html">JavaScript</a></li>
-                    <li><a>Framework JS</a>
-                        <ul class="submenu">
-                            <li class="backgrounds"><a href="./reactjs.html">React JS</a></li>
-                            <li class="backgrounds"><a href="./expressjs.html">Express JS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./bootstrap.html">Bootstrap</a></li>
-                    <li><a href="./jquery.html">JQuery</a></li>
-                </ul>
-            </nav>
+      <section class="container-fluid slider d-flex justify-content-center align-items-center mt-2 mb-3">
+        <div class="text-center m-5">
+          <img src="./img/reactlogo.png" class="img-fluid" width="250">
         </div>
+      </section>
 
-        <div>
-            <h1 id="title" class="title">React JS</h1>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ml-2">
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center h5 text-uppercase" id="navbarText">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./javascript.html">Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./expressjs.html">Express.js</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./bootstrap.html">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./jquery.html">JQuery</a>
+            </li>
+          </ul>
+
         </div>
+      </nav>
+   
+      <div class="card m-5">
+        <div class="card-header">
+          <p class="h4 text-center"> - ¿ Que es React ? -</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-start">
+              Es una librería open source de JavaScript para desarrollar interfaces de usuario. Fue lanzada en el año 2013 y desarrollada por Facebook, quienes también la mantienen actualmente junto a una comunidad de desarrolladores independientes y compañías.
+              
+            </p>
+            <p class="text-start">
+              Hoy en día muchas empresas de primer nivel utilizan React para el desarrollo de sus aplicaciones, y es que entre ellas podemos encontrar Facebook, Instagram y el cliente web de WhastApp (todas propiedad de Facebook), y otras como AirBnb, Uber, Netflix, Twitter, Reddit o Paypal.            </p>
+            <p class="text-start">
+              Desde su lanzamiento, su uso ha ido incrementando notablemente, convirtiéndose, a día de hoy, en una de las tecnologías front-end más utilizadas.
+            </p> 
+            
+            <div class="text-center m-5">
+              <img src="./img/grafica-react.png" class="img-fluid">
+            </div>
+          </blockquote>
         
-        <section id="container" class="container">
-            <article id="section1" class="section">
-                <p>EY</p>
-                
-            </article>
-            <article id="section2" class="section">
-                <p>EY</p>
-                
-            </article>
+        </div>
+      </div>
 
-            <article id="section3" class="section">
-                <p>EY</p>
-                
-            </article>
-
-            <article id="section4" class="section">
-                <p>EY</p>
-                
-            </article>
-
-            <article id="section5" class="section">
-                <p>EY</p>
-                
-            </article>
-        </section>
-
-        <footer id="mainFooter">
     
-            <div>
-                <h3>Sullivan Code</h3>
-                <p>All rights reserved 2022</p>
+
+      <div class="card m-5">
+        <div class="card-header">
+          <p class="h4 text-center"> - Informacón técnica -</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-start">
+              Como hemos comentado más arriba, es una librería de JavaScript para desarrollar interfaces de usuario. Según a quién le preguntes, puede que te digan que es la “V” de un framework MCV (Modelo-Vista-Controlador), y es que, al tratarse de una librería, React necesita ser acompañado de otras librerías para completar las necesidades de desarrollo de nuestra aplicación web.            </p>
+            <p class="text-start">
+              Esto puede ser una ventaja o un desventaja dependiendo de la persona que lo utilice. Angular, por ejemplo, es un framework que nos proporciona unas herramientas completas para desarrollar una aplicación web al 100%, aunque, no obstante, no ofrece tanta libertad como React a la hora de elegir con qué tecnologías queremos trabajar. Esto es, Angular es un framework “opinionado” mientras que React es una librería que cubre una necesidad.
+            </p>
+           
+          </blockquote>
+        
+        </div>
+      </div>
+
+
+      <div class="card m-5">
+        <div class="card-header">
+          <p class="h4 text-center"> - React y su arquitectura -</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-start">
+              El elemento más importante de React es el componente, que es, en esencia, una pieza de la interfaz de usuario. Como norma general, al diseñar una aplicación con React, lo que estamos haciendo es crear componentes independientes y reusables para, poco a poco, crear interfaces de usuario más complejas.
+            </p>
+            <p class="text-start">
+              En ese sentido, React es similar a Angular, ya que toda aplicación en React tiene al menos un componente; al que normalmente nos referimos como componente «raíz», que contiene otros componentes “hijos”, y estos a su vez otros, etc. De esta manera, se puede afirmar que la vista es un árbol de componentes, como se muestra en el siguiente diagrama de ejemplo:
+            </p>
+
+            <div class="text-center m-5">
+              <img src="./img/arquitectura-react.png" class="img-fluid">
             </div>
+            <p class="text-start">
+              <p class="text-start">
+                En ese sentido, React es similar a Angular, ya que toda aplicación en React tiene al menos un componente; al que normalmente nos referimos como componente «raíz», que contiene otros componentes “hijos”, y estos a su vez otros, etc. De esta manera, se puede afirmar que la vista es un árbol de componentes, como se muestra en el siguiente diagrama de ejemplo:
+              </p>
+            </p>
 
-            <div>
-                <h3>Tecnologías usadas en la web</h3>
-
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img alt="html5 image" src="./img/html5.svg"/></a></li>
-                    <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank"><img alt="css3 image"  src="./img/css3.svg"/></a></li>
-                    <li><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank"><img alt="javascript image" src="./img/javascript.svg"></a></li>
-                </ul>
-
+            <hr>
+            <div class="card-body">
+              <div class="d-flex justify-content-center bg-dark m-5">
+                <code>
+                  <pre class="pt-4">
+                      import React from "react";
+        
+                      class ComponentExample extends React.Component {
+                        state = {
+                          data = ""
+                        }
+                      
+                        render () {
+                          return (
+                      
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;
+                      
+                          )
+                        }
+                      }
+        
+                      export default ComponentExample;
+                    </pre>
+                </code>
+              </div>
             </div>
-
             <div>
-                <h3>Licenciado bajo Creative Commons</h3>
+            <hr>
+            <p class="text-start">  
+              El estado (state) son los datos con los que queremos trabajar e incluso mostrar cuando el componente se renderiza. El método “render”, por otro lado, es responsable de describir cómo se tiene que ver dicho componente.
+              </br>
+              Como se puede apreciar, React rompe las buenas prácticas que se han utilizado a lo largo de los últimos años al juntar la vista con la lógica, no obstante, al tratarse de pequeños componentes, el hecho de tener todo a disposición en un mismo lugar empieza a ser más un beneficio que una desventaja. 
+            </p>
 
-                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-            </div>
+          </blockquote>
+        
+        </div>
+      </div>
 
-        </footer>
+
+      <div class="card m-5">
+        <div class="card-header">
+          <p class="h4 text-center"> - Virutual DOM -</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-start">
+              Es curioso no sólo el hecho de escribir la vista del componente junto a la lógica, sino escribir código HTML directamente en el archivo .js en el que se incluye el componente.
+            </p>
+            <p class="text-start">
+              Este “código HTML”, y ahora sí que lo pongo entre comillas, no es código HTML al uso, si no JSX; un lenguaje creado por la propia Facebook que, con sintaxis HTML, compila a un objeto JavaScript que se mapeara a un elemento del DOM.
+            </p>
+            <p class="text-start">
+              Lo que hace React es, a través de este código JSX, crear una representación en memoria del DOM; denominada “Virtual DOM”, a partir de la cual luego crea el DOM definitivo en el navegador. Este “Virtual DOM”, a diferencia del DOM común, pesa muy poco y utiliza escasos recursos para ser creado. Así que, en caso de que un componente cambiase su estado, y con ello la información a renderizar, React compararía los cambios realizados en el Virtual DOM, vería qué elemento o elementos han cambiado, y actualizaría solo esas partes en el DOM real. Al tratarse solo y exclusivamente de código JavaScript, el compilado y renderizado de todos estos cambios se realiza rápidamente.
+            </p>
+            <p class="text-start">
+              Aun siendo desde su versión 16 una librería de por sí muy rápida y eficaz en cualquier máquina, en caso de que necesitemos realizar una aplicación web para dispositivos con pocos recursos, existe la posibilidad de usar una alternativa, Preact, que sigue la misma API y patrones que React, pero con un tamaño menor.
+            </p>
+
+          </blockquote>
+        
+        </div>
+      </div>
+
+      <div class="card m-5">
+        <div class="card-header">
+          <p class="h4 text-center"> - Conclusiones -</p>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="text-start">
+              Posee unas virtudes que gustaran o no dependiendo de la persona o del proyecto en el que se trabajará. Queda bastante claro que ha venido para quedarse, y el incremento gradual de su uso lo avala.            </p>
+            <p class="text-start">
+              Si tienes experiencia con otros framework, como Angular, a pesar de tener formas diferentes de trabajar, la filosofía de su utilización es similar, así, que sin duda, recomiendo encarecidamente aprender sobre esta librería ya que puede llegar a ser indispensable en el futuro.
+            </p>
+          </blockquote>
+        
+        </div>
+      </div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>
+        Conéctate con nosotros en las redes sociales.
+      </span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Sullivan Code
+          </h6>
+          <p>
+            Aprende a programar en la mejor plataforma por y para desarrolladores.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Lenguajes
+          </h6>
+          <p>
+            <a href="./index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="./javascript.html" class="text-reset">JavaScript</a>
+          </p>
+          <p>
+            <a href="./jquery.html" class="text-reset">JQuery</a>
+          </p>
+          <p>
+            <a href="./bootstrap.html" class="text-reset">Bootstrap</a>
+          </p>
+          <p>
+            <a href="./expressjs.html" class="text-reset">Express</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i>Albaida del Aljarafe, Sevilla.</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            sullivancode@mail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 34 624 457 124</p>
+          <p><i class="fas fa-print me-3"></i> + 34 684 645 444</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="./index.html">sullivancode.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
     </body>
 </html>
