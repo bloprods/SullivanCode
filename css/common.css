@@ -1,6 +1,7 @@
 *{
     margin: 0;
     z-index: 5;
+    
 }
 
 @font-face {
@@ -11,19 +12,20 @@
 html
 {
     scroll-behavior: smooth;
+
 }
 
 /* BODY style. */
 body
 {
     font-family: Poppins;
-    background-color: #F5F5EF;
+    background-color: #191919;
 }
 
 /* HEADER style. */
 header
 {
-    margin-left: 350px;
+    margin-left: 0px;
     transition: 0.5s;
 }
 
@@ -34,7 +36,7 @@ h1.mainTitle
     font-weight: bold;
     clear: both;
     padding-top: 30px;
-    color: #1F2839;
+    color: #ffffff;
     transition: 0.5s;
 }
 
@@ -45,12 +47,12 @@ h1.title
     clear: both;
     padding-top: 25px;
     padding-bottom: 35px;
-    color: #1F2839;
+    color: #f3d139;
     transition: 0.5s;
 }
 
 h2 {
-    color: #1F2839;
+    color: #a0a0a0;
     transition: 0.5s;
 }
 
@@ -59,18 +61,18 @@ h2 {
 {
     position: sticky;
     top: 0;
-    background-color: #F5F5EF;
+    background-color: #191919;
     margin-bottom: 10px;
 }
 
 /* NAV style. */
 .navigationMenu {
     margin-top: 33px;
-    background: #1f2839;
+    background: #191919;
     text-align: center;
     transition: 0.5s;
-    margin-left: 350px;
-    border-bottom: #F5F5EF;
+    margin-left: 0px;
+    border-bottom: #191919;
     border-bottom-style: solid;
     border-bottom-width: 10px;
 }
@@ -87,13 +89,14 @@ h2 {
 .menu > li > a{
     text-decoration: none;
     display: block;
-    padding: 15px;
     color: white;
+    padding: 15px;
+    color: 191919;
     font-weight: bold;
 }
 
 .menu > li > a:hover{
-    color: #b69d74;
+    color: #8d8d8d  ;
     transition: all 1.2s;
 }
 
@@ -101,7 +104,7 @@ h2 {
     position: absolute;
     width: 220px;
     margin-left: 10px;
-    background: #303a4c;
+    background: #6e6e6e;
     display: none;
     padding-left: 0;
 }
@@ -118,7 +121,7 @@ h2 {
 }
 
 .submenu > li > a:hover{
-    color:#1F2839;
+    color:#a0a0a0;
     transition: all 0.5s;
 }
 
@@ -127,7 +130,7 @@ h2 {
 }
 
 .backgrounds:nth-child(even){
-    background:#1F2839;
+    background:#474747;
 }
 
 .backgrounds
@@ -137,7 +140,8 @@ h2 {
 
 .backgrounds:hover
 {
-    background: #b69d74;
+    background: #e6e6e6;
+    text-decoration: black;
 }
 
 
@@ -146,15 +150,15 @@ h2 {
 {
     position: fixed;
     height: 100%;
-    width: 350px;
+    width: 0px;
     padding-top: 50px;
     margin-right: 10px;
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
-    background: #1F2839;
+    background: #313131;
     color: #F5F5EF;
-    border-right-color: #b69d74;
+    border-right-color: #b3b3b3;
     border-right-width: 5px;
     border-right-style: solid;
     z-index: 6;
@@ -178,6 +182,7 @@ h2.subtitle
     padding-bottom: 14px;
     padding-left: 10px;
     margin-left: 10px;
+
 }
 
 .sideContent>a
@@ -188,8 +193,8 @@ h2.subtitle
 
 .sideContent:hover
 {
-    background-color: #b69d74;
-    color: #1F2839;
+    background-color: #971d1dc4;
+    color: #5e5e5e;
     font-size: 19px;
     transition: 0.5s;
     width: 500px;
@@ -203,22 +208,22 @@ h2.subtitle
     z-index: 1;
     font-size: 20px;
     cursor: pointer;
-    background-color: #1F2839;
+    background-color: #3a3a3a;
     border-style: none;
-    color: #F5F5EF;
+    color: #ffffff;
     padding: 7px 13px;
     margin-top: 4px;
     margin-bottom: 0;
     margin-left: 10px;
     transition: 0.5s;
-    visibility: hidden;
+    visibility: visible;
     z-index: 6;
 }
   
 .openbtn:hover 
 {
-    background-color: #b69d74;
-    color: #1F2839;
+    background-color: #971d1dc4;
+    color: #ffffff;
 }
 
 
@@ -226,7 +231,7 @@ h2.subtitle
 .closebtn 
 {
     padding: 8px;
-    color:#b69d74;
+    color:#ffffff;
     font-size: 20px;
     position: absolute;
     right: 10px;
@@ -236,23 +241,24 @@ h2.subtitle
 
 .closebtn:hover
 {
-    background-color: #b69d74;
-    color: #1F2839;
+    color: #e0c758;
 }
 
 
 /* SECTION style. */
 .container
 {
-    margin-left: 360px;
+    margin-left: 0px;
     margin-right: 10px;
-    background-color: #F5F5EF;
+    background-color: #191919;
     transition: 0.5s;
+
 }
 
 
 .section>p
 {
+    
     margin: 20px;
     margin-bottom: 40px;
     text-align: justify;
@@ -263,7 +269,7 @@ h2.subtitle
 {
     font-size: 18px;
     margin-bottom: 20px;
-    background:  #D6D5D5;
+    background:  #191919;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -283,50 +289,26 @@ h2.subtitle
 
 article>h1
 {
-    background-color: #1F2839;
-    color: #F5F5EF;
+    background-color: #525252;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
 }
 
 article
 {
-    background-color: #F5F5EF;
-}
+    background-color: #292929;
+    color: white;
 
-/* BUTTON go up. */
-.buttonUP
-{
-    border: none;
-    color: #1F2839;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    background: url("../Index/Images/arrowUP.png") no-repeat;
-    padding: 10px;
-	background-position: center;
-    background-color: #b69d74;
-}
-
-.buttonUP:hover
-{
-    color: #F5F5EF;
-    transition: 0.3s;
-    background-image: url("../Index/Images/arrowUP_Hover.png");
-    background-color: #1F2839;
 }
 
 
 /*footer*/
 
 footer{
-    margin-left: 350px; 
+    margin-left: 0px; 
     height: 50%;
-    background-color: #1F2839;
+    background-color: #292929;
     color: white;
     transition: 0.5s;
     flex-direction: row;
@@ -366,25 +348,25 @@ table {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #b69d74;
+    border: 5px solid #444444;
     border-radius: 30px;
     
   }
   
 td, th {
-    border: 1px #b69d74;
+    border: 1px #3d3d3d;
     padding: 20px;
 }
   
-tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(even){background-color: #686868;}
   
-tr:hover {background-color: #ddd;}
+tr:hover {background-color: rgb(70, 70, 70);}
   
 th {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #1F2839;
-    color: white;
+    background-color: #363636;
+    color: rgb(253, 253, 253);
     text-align: center;
 }
 

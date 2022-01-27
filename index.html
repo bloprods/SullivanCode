@@ -77,17 +77,17 @@
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                     <img class="imgslideshow" src="img/javascript.jpg">
-                    <div class="text">JavaScript</div>
+                    <div class="text"></div>
                     </div>
                     
                     <div class="mySlides fade">
                     <img class="imgslideshow" src="img/bootstrap.png">
-                    <div id="bootstrapslide" class="text">Bootstrap</div>
+                    <div id="bootstrapslide" class="text"></div>
                     </div>
                     
                     <div class="mySlides fade">
                     <img class="imgslideshow" src="img/tutoriales-jquery.jpeg">
-                    <div class="text">JQuery</div>
+                    <div class="text"></div>
                     </div>
                     
                 </div>
@@ -146,14 +146,95 @@
 
             <article class="section">
 
-                <h1>Dónde nos encontramos</h1>
-                <div  class="center">
-                    <p>
-                        </br>
-                        Nos puedes encontrar en I.E.S El Majuelo (Gines).
-                    </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.030192656824!2d-6.072631484381044!3d37.38911824202593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1213525f4743e5%3A0x21ceb607bb8bb7fa!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20El%20Majuelo!5e0!3m2!1ses-419!2ses!4v1642360112129!5m2!1ses-419!2ses"  allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                <h1> - ¡ Suscribete a nuestra Newsletter ! - </h1>
+                </br>
+                <form action="salida.html" method="POST" enctype="multipart/form-data">
+
+                    <legend>Introduce tus datos de contacto</legend>
+    
+                        <br/>
+    
+                        <label for="name" >Nombre* </label>
+                        <input type="text" name="nombre" id="name" maxlength="20" size="20"></input><br/>
+    
+                        <br/>
+    
+                        <label for="apell" >Apellidos* </label>
+                        <input type="text" name="apell" id="apell" maxlength="40" size="40"></input><br/>
+    
+                        <br/>
+    
+                        <label for="dni" >DNI* </label>
+                        <input type="text" name="dni" id="dni" maxlength="9" size="9"></input><br/>                        
+    
+                        <br/>
+    
+                        <label for="fn" >Fecha de nacimiento* </label>
+                        <input type="date" name="fn" id="fn"></input><br/><br/>
+                        
+                        <label id="sexo">Sexo* </label><br/>
+                        <input type="radio" name="sexo" id="hombre" value="hombre"></input>
+                        <label for="hombre">Hombre</label><br/>
+                        <input type="radio" name="sexo" id="mujer" value="mujer"></input>
+                        <label for="mujer">Mujer</label><br/>
+                        <input type="radio" name="sexo" id="otro" value="otro"></input>
+                        <label for="otro">Prefiero no decirlo</label><br/><br/>
+    
+                        <label for="tlf" >Teléfono</label>
+                        <input type="text" name="tlf" id="tlf" maxlength="9" size="9"></input><br/>
+    
+                        <br/>
+    
+                        <label for="mail" >E-mail* </label>
+                        <input type="text" name="mail" id="mail" maxlength="20" size="20"></input><br/>
+    
+                        <br/>
+    
+                        <label for="cod" >Codigo Postal* </label>
+                        <input type="text" name="cod" id="cod" maxlength="5" size="5"></input><br/>                        
+    
+                        <br/>
+    
+                        <label for="foto" >Foto</label>
+                        <input type="foto" name="foto" id="foto" size="5"></input>
+                        <input type="file" name="subir" value="nombre"></input>
+    
+                        <br/><br/>
+    
+                        <label for="sugerencias">Envianos tus sugerencias</label><br/>
+                        <textarea id="sugerencias" name="sugerencias" cols="40" rows="5"></textarea>
+                        
+                        <br/><br/>
+    
+                        <label for="fre"> Seleccione cada cuanto quiere recibir nuestra Newsletter* &nbsp;</label>
+                        <select name="fre" id="fre">
+                                <option value="sema" selected="selected">Una vez a la semana</option>
+                                <option value="mensu">Una vez al mes</option>
+                                <option value="tri">Cada 3 meses</option>
+                                <option value="anu">Una vez al año</option>
+                        </select>
+                        
+                        <br/><br/>
+    
+                        <input type="checkbox" name="pol" id="pol" value="pol"></input>
+                        <label for="pol">Politica de privacidad de TravelPerk</label><br/>
+    
+                        <br/>
+    
+                        <input type="checkbox" name="ter" id="ter" value="ter"></input>
+                        <label for="ter">Terminos de uso</label><br/>                        
+    
+                        <br/>
+    
+                        <input type="checkbox" name="acept" id="acept" value="acept" checked="checked"></input>
+                        <label for="acept">Deseo recibir la Newsletter</label><br/>  
+    
+                <br/>
+    
+                <input type="submit" name="subir" value="Suscribirme" class="boton_enviar">&nbsp; &nbsp;</input>
+                <input type="reset" name="borrar" value="Borrar datos introducidos" class="boton_borrar"></input>
+            
+            </form>
 
             </article>
 
