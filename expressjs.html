@@ -6,9 +6,8 @@
         <title>Express JS</title>
         <link rel="icon" type="image/x-icon" href="./img/mainIcon.ico"/>
         <link rel="stylesheet" href="css/common.css"/>
-        <link rel="stylesheet" href="css/javascript.css"/>
+        <link rel="stylesheet" href="css/express.css"/>
         <script type="text/javascript" src="js/common.js"></script>
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
@@ -19,21 +18,17 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
             <h2 class="subtitle">CONTENIDO</h2>
             <p class="sideContent" >
-                <a href="#section1">- Section 1</a><br/>
+                <a href="#section1">- ¿ Que es JQuery ?</a><br/>
             </p>
             <p class="sideContent" >
-                <a href="#section2">- Section 2</a><br/>
+                <a href="#section2">- Descripción general</a><br/>
             </p>
     
             <p class="sideContent">
-                <a href="#section3">- Section 3</a><br/>
+                <a href="#section3">- Características</a><br/>
             </p>
             <p class="sideContent"> 
-                <a href="#section4">- Section 4</a><br/>
-            </p>
-    
-            <p class="sideContent">
-                <a href="#section5">- Section 5</a><br/>
+                <a href="#section4">- ¿ Cómo usar JQuery ?</a><br/>
             </p>
         </aside>
         
@@ -66,27 +61,97 @@
         
         <section id="container" class="container">
             <article id="section1" class="section">
-                <p>EY</p>
+                <h1>- ¿ Qué es Express JS ? -</h1>
+                <a href="https://expressjs.com" target="_blank">
+                    <img class="mainImage" src="img/expressjs.png" alt="Express logo"></img>
+                </a>
+                <p>
+                    Express es el framework web más popular de Node, y es la librería subyacente para un gran 
+                    número de otros frameworks web de Node populares. Proporciona mecanismos para:
+                    <ul>
+                        <li>
+                            Escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes 
+                            caminos URL (rutas).
+                        </li>
+                        <li>
+                            Integración con motores de renderización de "vistas" para generar respuestas 
+                            mediante la introducción de datos en plantillas.
+                        </li>
+                        <li>
+                            Establecer ajustes de aplicaciones web como qué puerto usar para conectar, y la 
+                            localización de las plantillas que se utilizan para renderizar la respuesta.
+                        </li>
+                        <li>
+                            Añadir procesamiento de peticiones "middleware" adicional en cualquier punto 
+                            dentro de la tubería de manejo de la petición.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    A pesar de que Express es en sí mismo bastante minimalista, los desarrolladores han creado 
+                    paquetes de middleware compatibles para abordar casi cualquier problema de desarrollo web. 
+                    Hay librerías para trabajar con cookies, sesiones, inicios de sesión de usuario, parámetros URL, 
+                    datos POST, cabeceras de seguridad y muchos más. Puedes encontrar una lista de paquetes middleware 
+                    mantenida por el equipo de Express en Express Middleware (junto con una lista de algunos de los 
+                    paquetes más populares de terceros).
+                </p>
+                <p class="nota">
+                    <span class="bold">Nota:</span> esta flexibilidad es una espada de doble filo. Hay paquetes de 
+                    middleware para abordar casi cualquier problema o requerimiento, pero deducir cuáles son los paquetes 
+                    adecuados a usar algunas veces puede ser un auténtico reto. Tampoco hay una "forma correcta" de estructurar una 
+                    aplicación, y muchos ejemplos que puedes encontrar en la Internet no son óptimos, o sólo muestran 
+                    una pequeña parte de lo que necesitas hacer para desarrollar una aplicación web.
+                </p>
                 
             </article>
             <article id="section2" class="section">
-                <p>EY</p>
+                <h1>- ¿ Es Express dogmático ? -</h1>
+                <p>
+                    Los frameworks web frecuentemente se refieren a sí mismos como "dogmáticos" ("opinionated") 
+                    o "no dogmáticos" ("unopinionated").
+                </p>
+                <p>
+                    Los frameworks dogmáticos son aquellos que opinan acerca de la "manera correcta" de gestionar 
+                    cualquier tarea en particular. Ofrecen soporte para el desarrollo rápido en un dominio en particular 
+                    (resolver problemas de un tipo en particular) porque la manera correcta de hacer cualquier cosa está 
+                    generalmente bien comprendida y bien documentada. Sin embargo pueden ser menos flexibles para resolver 
+                    problemas fuera de su dominio principal, y tienden a ofrecer menos opciones para elegir qué componentes 
+                    y enfoques pueden usarse.
+                </p>
+                <p>
+                    Los framewoks no dogmáticos, en contraposición, tienen muchas menos restricciones sobre el modo mejor 
+                    de unir componentes para alcanzar un objetivo, o incluso qué componentes deberían usarse. Hacen más fácil 
+                    para los desarrolladores usar las herramientas más adecuadas para completar una tarea en particular, si bien 
+                    al coste de que necesitas encontrar esos componentes por tí mismo.
+                </p>
+                <p>
+                    Express no es dogmático, transigente. Puedes insertar casi cualquier middleware compatible que te guste 
+                    dentro de la cadena de manejo de la petición, en casi cualquier orden que te apetezca. Puedes estructurar 
+                    la app en un fichero o múltiples ficheros y usar cualquier estructura de directorios. ¡Algunas veces puedes 
+                    sentir que tienes demasiadas opciones!
+                </p>
                 
             </article>
 
             <article id="section3" class="section">
-                <p>EY</p>
+                <h1>- Ejemplo de código -</h1>
                 
-            </article>
+                <p>
+                    <h2>Hola Mundo! - en Express</h2>
+                    Este sería uno de los programas más conocidos en el mundo de la programación. El clásico y tradicional ejemplo de Hola Mundo!
+                </p>
+                <p class="code">
+                    <span class="function">var</span> express = <span class="methods">require</span>(<span class="string_parameter">'express'</span>);<br>
+                    <span class="function">var</span> app = <span class="methods">express</span>();<br><br>
 
-            <article id="section4" class="section">
-                <p>EY</p>
-                
-            </article>
+                    app.<span class="methods">get</span>(<span class="string_parameter">'/'</span>, <span class="function">function</span>(req, res) {<br>
+                        &emsp;res.<span class="methods">send</span>(<span class="string_parameter">'Hola Mundo!'</span>);<br>
+                    });<br><br>
 
-            <article id="section5" class="section">
-                <p>EY</p>
-                
+                    app.<span class="methods">listen</span>(<span class="number_parameter">3000</span>, <span class="function">function</span>() {<br>
+                        &emsp;console.<span class="methods">log</span>(<span class="string_parameter">'Aplicación ejemplo, escuchando el puerto 3000.'</span>);<br>
+                    });
+                </p>
             </article>
         </section>
 

@@ -1,5 +1,7 @@
 .code {
     background-color: #E3E2E2;
+    border-left: 6px solid #005282;
+    padding: 12px;
 }
 .comment {
     font-style: italic;
@@ -14,4 +16,67 @@
 .function {
     color: #008050;
     font-weight: bold;
+}
+
+.test {
+    background-color: #E3E2E2;
+    border-left: 6px solid #BA2121;
+    padding: 12px;
+}
+
+#hidebtn {
+    margin-left: 20px;
+    border: none;
+    color: #1F2839;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: url("../img/ocultar.png") no-repeat;
+    padding: 10px;
+	background-position: center;
+    background-color: #b69d74;
+}
+
+#showbtn {
+    border: none;
+    color: #1F2839;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: url("../img/mostrar.png") no-repeat;
+    padding: 10px;
+	background-position: center;
+    background-color: #b69d74;
+}
+
+.bloque {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: #E3E2E2;
+    border: 5px solid #BA2121;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #b69d74; /* Green */
+    font-weight: bold;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
 }

@@ -62,7 +62,7 @@
             <article id="section1" class="section">
                 <h1>- ¿ Que es JavaScript ? -</h1>
                 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-                    <img class="mainImage" src="img/JavaScript.svg" alt="JavaScript logo"></img>
+                    <img class="mainImage" src="./img/javascript.png" alt="JavaScript logo"></img>
                 </a>
                 
                 <p>
@@ -136,29 +136,34 @@
                 </p>
 
                 <p>
+                    <img id="imagencodigo" src="img/codigo.png" alt="codigo JavaScript"/>
                     Concretamente, a nosotros nos interesa una sección particular del inspector de elementos. Para ello, nos moveremos a la 
                     pestaña Console y ya nos encontraremos en la consola JavaScript de la página.
+                    
                 </p>
                 <p>
                     En esta consola, podemos escribir funciones o sentencias de JavaScript que estarán actuando en la página que se encuentra en la pestaña 
                     actual del navegador. De esta forma podremos observar los resultados que nos devuelve en la consola al realizar diferentes acciones. 
                     Para ello, vamos a ver algunas bases:
                 </p>
+                
                 <p>
                     El clásico primer ejemplo cuando se comienza a programar, es crear un programa que muestre por pantalla un texto, generalmente el texto 
                     «Hola Mundo». También podemos realizar, por ejemplo, operaciones numéricas. En la consola JavaScript podemos hacer esto de forma muy sencilla:
+                    <code>
+                        console.log("Hola Mundo");<br>
+                        console.log(2 + 2);
+                    </code>
                     
-                    console.log("Hola Mundo");
-                    <br>
-                    console.log(2 + 2);
                 </p>
+                
                 <p>
                     En la primera línea, veremos que al pulsar enter nos muestra el texto «Hola Mundo». En la segunda línea, sin embargo, procesa la operación 
                     y nos devuelve 4. Para mostrar estos textos en la consola JavaScript hemos utilizado la función console.log, pero existen varias más:
                     <br>
-                    <img src="img/codigo.png" alt="codigo JavaScript"/>
-
-                    <table id="tables">
+                    
+                    
+                    <table>
                         <thead>
                             <tr>
                                 <th scope="col">Función</th>
@@ -188,6 +193,7 @@
                             </tr>			
                         </tbody>
                     </table>
+                    
                 </p>
                 <p>
                     La idea es utilizar en nuestro código la función que más se adapte a nuestra situación en cada caso 
@@ -203,59 +209,59 @@
                     a nuestro navegador que tareas debe realizar, en que orden y cuantas veces (por ejemplo).
                     <ul>
                         <li>
-                            Programa: En programación se suele llamar «programa» a el conjunto total de código que desarrollas. 
+                            <span class="bold">Programa:</span> En programación se suele llamar «programa» a el conjunto total de código que desarrollas. 
                             En JavaScript, quizás el término más utilizado es aplicación web (cuando es un desarrollo con mucha 
                             cantidad de JavaScript). También se suelen generalizar utilizando términos como «script» o «código JavaScript».
                         </li>
                         <li>
-                            Algoritmo: Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para conseguir 
+                            <span class="bold">Algoritmo:</span> Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para conseguir 
                             realizar una tarea satisfactoriamente y lograr un objetivo.
                         </li>
                         <li>
-                            Comentarios: Los comentarios en nuestro código son fragmentos de texto o anotaciones que el navegador 
+                            <span class="bold">Comentarios:</span> Los comentarios en nuestro código son fragmentos de texto o anotaciones que el navegador 
                             ignora y no repercuten en el programa. Sirven para dejar por escrito detalles importantes para el programador. 
                             De esta forma cuando volvamos al código, nos será más rápido comprenderlo. Es una buena costumbre comentar 
                             en la medida de lo posible nuestro código.
                         </li>
                         <li>
-                            Indentación: Se llama indentar a la acción de colocar espacios o tabuladores antes del código, para indicar 
+                            <span class="bold">Indentación:</span> Se llama indentar a la acción de colocar espacios o tabuladores antes del código, para indicar 
                             si nos encontramos dentro de un if, de un bucle, etc... Esta práctica es muy importante y necesaria, y más 
                             adelante profundizaremos en ella.
                         </li>
                         <li>
-                            Variables: Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una información 
+                            <span class="bold">Variables:</span> Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una información 
                             determinada, de forma muy similar a las incógnitas en matemáticas. Un programa puede tener muchas variables, 
                             y cada una de ellas tendrá un nombre, un valor y un tipo de dato. El nombre se utiliza para diferenciarlas 
                             unas de otras y hacer referencia a ellas, el valor es la información que contienen y el tipo de dato es la 
                             naturaleza de ese valor. Se llaman variables porque podemos cambiarle su valor a lo largo del programa, según necesitemos.
                         </li>
                         <li>
-                            Constantes: Es el mismo concepto de una variable, salvo que en este caso, la información que contiene es 
+                            <span class="bold">Constantes:</span> Es el mismo concepto de una variable, salvo que en este caso, la información que contiene es 
                             siempre la misma (no puede variar).
 
                         </li>
                         <li>
-                            Funciones: Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más grande, por lo 
+                            <span class="bold">Funciones:</span> Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más grande, por lo 
                             que hay que buscar formas de organizarlo y mantenerlo lo más simple posible. Las funciones son agrupaciones 
                             de código que, entre otras cosas, evitan que tengamos que escribir varias veces lo mismo en nuestro código. 
                             Una función contendrá una o mas acciones a realizar y cada vez que ejecutemos una función, se realizarán todas ellas.
                         </li>
                         <li>
-                            Parámetros: Es el nombre que reciben las variables que se le pasan a las funciones. 
+                            <span class="bold">Parámetros:</span> Es el nombre que reciben las variables que se le pasan a las funciones. 
                             Muchas veces también se les denomina argumentos.
                         </li>
                         <li>
-                            Bucles: Cuando estamos programando, muchas veces necesitaremos realizar tareas repetitivas. 
+                            <span class="bold">Bucles:</span> Cuando estamos programando, muchas veces necesitaremos realizar tareas repetitivas. 
                             Una de las ventajas de la programación es que permite automatizar acciones y no es necesario hacerlas varias 
                             veces. Los bucles permiten indicar el número de veces que se repetirá una acción. De esta forma, 
                             sólo la escribimos una vez en nuestro código, y simplemente indicamos el número de veces que queremos que se repita.
                         </li>
                         <li>
-                            Iteración: Cuando el programa está en un bucle repitiendo varias veces la misma tarea, cada una de esas 
+                            <span class="bold">Iteración:</span> Cuando el programa está en un bucle repitiendo varias veces la misma tarea, cada una de esas 
                             repeticiones se denomina iteración. 
                         </li>
                         <li>
-                            Librería: Muchas veces, desarrollamos código que resuelve tareas o problemas que, posteriormente, querremos 
+                            <span class="bold">Librería:</span> Muchas veces, desarrollamos código que resuelve tareas o problemas que, posteriormente, querremos 
                             reutilizar en otros programas. Cuando eso ocurre, en JavaScript se suele empaquetar el código en lo que se 
                             llaman librerías, que no es más que código listo para que otros programadores puedan utilizarlo fácilmente en 
                             sus programas y beneficiarse de las tareas que resuelven de forma muy sencilla.
