@@ -148,9 +148,9 @@
 
                 <h1> - ¡ Suscribete a nuestra Newsletter ! - </h1>
                 </br>
-                <form action="salida.html" method="POST" enctype="multipart/form-data">
+                <form onsubmit="alert('Se ha enviado correctamente el formulario');">
 
-                    <legend>Introduce tus datos de contacto</legend>
+                    <legend>Introduce tus datos de contacto.</legend>
     
                         <br/>
     
@@ -231,7 +231,7 @@
     
                 <br/>
     
-                <input type="submit" name="subir" value="Suscribirme" class="boton_enviar">&nbsp; &nbsp;</input>
+                <input type="submit" name="subir" value="Suscribirme" class="boton_enviar" onclick="return confirm('¿Estás seguro de enviar el formulario?');">&nbsp; &nbsp;</input>
                 <input type="reset" name="borrar" value="Borrar datos introducidos" class="boton_borrar"></input>
             
             </form>

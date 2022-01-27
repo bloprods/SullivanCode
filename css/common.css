@@ -42,7 +42,7 @@ h1.mainTitle
 
 h1.title
 {
-    margin-left: 350px;
+    margin-left: 0;
     text-align:center;
     clear: both;
     padding-top: 25px;
@@ -306,6 +306,16 @@ article
 /*footer*/
 
 footer{
+    background-color: #292929;
+    padding-bottom: 1%;
+    color: white;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+}
+/*
+footer{
+    width: 100%;
     margin-left: 0px; 
     height: 50%;
     background-color: #292929;
@@ -318,8 +328,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    text-align: justify;
-}
+    justify-content: center;
+}*/
 
 footer img:hover{
     transition: 0.3s;
@@ -337,8 +347,13 @@ footer a{
 }
 
 footer div{
-    padding-top: 3%;
-    padding-right: 10%;
+    margin: 5%;
+}
+
+footer div ul {
+    padding-left: 30%;
+    padding-right: 50%;
+    width: 90%;
 }
 
 /*tablas*/
@@ -380,4 +395,37 @@ li {
 
 .bold {
     font-weight: 900;
+}
+
+.code {
+    background-color: rgb(70, 70, 70);
+    border-left: 6px solid ;
+    padding: 12px;
+    border-color: #ffd65e; /* Old browsers */
+    border-color: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6-15 */
+    border-color: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+    border-color: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+}
+
+.string_parameter {
+    color: #26a071;
+}
+.number_parameter {
+    color: #da6900;
+}
+.function {
+    color: #3aaaff;
+}
+.methods {
+    color: #DB000E;
+}
+
+.comment {
+    font-style: italic;
+    color: #408080;
+}
+
+.var_parameter {
+    color: #12dd12;
 }

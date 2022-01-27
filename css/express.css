@@ -1,24 +1,6 @@
 .nota {
-    background-color: #DDEAFF;
-    border-left: 6px solid #0072b3;
+    background-color: #32744e;
+    border-left: 6px solid #1d422c;
     padding: 12px;
 }
 
-.code {
-    background-color: #E3E2E2;
-    border-left: 6px solid #005282;
-    padding: 12px;
-}
-
-.string_parameter {
-    color: #005A38;
-}
-.number_parameter {
-    color: #AB0008;
-}
-.function {
-    color: #005291;
-}
-.methods {
-    color: #DB000E;
-}

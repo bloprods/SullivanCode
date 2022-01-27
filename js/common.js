@@ -30,3 +30,6 @@ function closeNav() {
     document.getElementById("navigationMenu").style.marginLeft = "0px";
 }
 
+function submit() {
+    alert("Se ha enviado correctamente el formulario");
+}

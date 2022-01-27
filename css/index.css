@@ -206,9 +206,12 @@ input{
 
 textarea{
   border-radius: 5px;
-  margin-left: 60px;
+  margin-left: 4%;
+  margin-right: 10%;
   margin-top: 20px;
+  width: 50%;
   border: 2px hidden #8d8d8d;
+  resize: none;
 
 }
 
