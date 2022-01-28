@@ -148,7 +148,7 @@
 
                 <h1> - ¡ Suscribete a nuestra Newsletter ! - </h1>
                 </br>
-                <form onsubmit="alert('Se ha enviado correctamente el formulario');">
+                <form onsubmit="submit_form()">
 
                     <legend>Introduce tus datos de contacto.</legend>
     
@@ -177,8 +177,8 @@
                         <label for="hombre">Hombre</label><br/>
                         <input type="radio" name="sexo" id="mujer" value="mujer"></input>
                         <label for="mujer">Mujer</label><br/>
-                        <input type="radio" name="sexo" id="otro" value="otro"></input>
-                        <label for="otro">Prefiero no decirlo</label><br/><br/>
+                        <input type="radio" name="sexo" id="otro" value="otro" checked></input>
+                        <label for="otro" >Prefiero no decirlo</label><br/><br/>
     
                         <label for="tlf" >Teléfono</label>
                         <input type="text" name="tlf" id="tlf" maxlength="9" size="9"></input><br/>
@@ -196,8 +196,7 @@
                         <br/>
     
                         <label for="foto" >Foto</label>
-                        <input type="foto" name="foto" id="foto" size="5"></input>
-                        <input type="file" name="subir" value="nombre"></input>
+                        <input type="file" name="foto" value="nombre"></input>
     
                         <br/><br/>
     

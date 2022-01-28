@@ -196,19 +196,19 @@
                 </p>
                 <p>
                     La característica principal de la biblioteca es que permite cambiar el contenido de una página web sin necesidad 
-                    de recargarla, mediante la manipulación del árbol DOM y peticiones AJAX. Para ello utiliza las funciones $() o jQuery().
+                    de recargarla, mediante la manipulación del árbol DOM y peticiones AJAX. Para ello utiliza las funciones <span class="methods">$</span>() o jQuery().
                 </p>
-                <h2>Función $()</h2>
+                <h2>Función <span class="methods">$</span>()</h2>
                 <p>
-                    La forma de interactuar con la página es mediante la función $(), un alias de jQuery(), que recibe como parámetro 
+                    La forma de interactuar con la página es mediante la función <span class="methods">$</span>(), un alias de jQuery(), que recibe como parámetro 
                     una expresión CSS o el nombre de una etiqueta HTML y devuelve todos los nodos (elementos) que concuerden con la 
                     expresión. Esta expresión es denominada selector en la terminología de jQuery.
                 </p>
                 
                 <p class="code">
-                    $(<span class="string_parameter">"#tablaAlumnos"</span>); <span class="comment">// Devolverá el elemento con id="tablaAlumnos"</span>
+                    <span class="methods">$</span>(<span class="string_parameter">"#tablaAlumnos"</span>); <span class="comment">// Devolverá el elemento con id="tablaAlumnos"</span>
                     <br>
-                    $(<span class="string_parameter">".activo"</span>);&emsp;&emsp;&emsp;&emsp;&ensp; <span class="comment">// Devolverá una matriz de elementos con class="activo"</span>
+                    <span class="methods">$</span>(<span class="string_parameter">".activo"</span>);&emsp;&emsp;&emsp;&emsp;&ensp; <span class="comment">// Devolverá una matriz de elementos con class="activo"</span>
                 </p>
                 <p>
                     Una vez obtenidos los nodos, se les puede aplicar cualquiera de las funciones que facilita la biblioteca.
@@ -216,7 +216,7 @@
                 <p class="code">
                     <span class="comment">// Se elimina el estilo (con removeClass()) y se aplica uno nuevo (con addClass()) a todos los nodos con class="activo"</span>
                     <br>
-                    $(<span class="string_parameter">".activo"</span>).removeClass(<span class="string_parameter">"activo"</span>).addClass(<span class="string_parameter">"inactivo"</span>);
+                    <span class="methods">$</span>(<span class="string_parameter">".activo"</span>).<span class="methods">removeClass</span>(<span class="string_parameter">"activo"</span>).<span class="methods">addClass</span>(<span class="string_parameter">"inactivo"</span>);
                 </p>
                 <p>
                     O por ejemplo, efectos gráficos:
@@ -224,15 +224,15 @@
                 <p class="code">
                     <span class="comment">// Anima todos los componentes con class="activo"</span>
                     <br>
-                    $(<span class="string_parameter">".activo"</span>).slideToggle(<span class="string_parameter">"slow"</span>);
+                    <span class="methods">$</span>(<span class="string_parameter">".activo"</span>).<span class="methods">slideToggle</span>(<span class="string_parameter">"slow"</span>);
                 </p>
                 <h2>Inicio de jQuery</h2>
                 <p>
                     Comúnmente antes de realizar cualquier acción en el documento con <code>jQuery()</code>, 
-                    debemos percatarnos de que el documento esté listo. Para ello usamos <code> $(document).ready();</code> de esta forma:
+                    debemos percatarnos de que el documento esté listo. Para ello usamos <code> <span class="methods">$</span>(document).ready();</code> de esta forma:
                 </p>
                 <p class="code">
-                    $(<span class="var_parameter">document</span>).ready(<span class="function">function</span>() {<br>
+                    <span class="methods">$</span>(<span class="var_parameter">document</span>).<span class="methods">ready</span>(<span class="function">function</span>() {<br>
                     &emsp;<span class="comment">// Aquí van todas las acciones del documento.</span><br>
                     });
                 </p>
@@ -249,12 +249,12 @@
                 </p>
 
                 <p class="code">
-                    $("#hidebtn").click(function() {<br>
-                        &emsp;$("#test1").hide(1500);<br>
+                    <span class="methods"><span class="methods">$</span></span>(<span class="string_parameter">"#hidebtn"</span>).<span class="methods">click</span>(<span class="function">function</span>() {<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#test1"</span>).<span class="methods">hide</span>(<span class="number_parameter">1500</span>);<br>
                     });<br>
                 
-                    $("#showbtn").click(function() {<br>
-                        &emsp;$("#test1").show(1500);<br>
+                    <span class="methods">$</span>(<span class="string_parameter">"#showbtn"</span>).<span class="methods">click</span>(<span class="function">function</span>() {<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#test1"</span>).<span class="methods">show</span>(<span class="number_parameter">1500</span>);<br>
                     });
                 </p>
                 <p id="test1" class="test">
@@ -267,8 +267,9 @@
                 <br><br>
                 <h2>Cambiar tamaño</h2>
                 <p class="code">
-                    $("#test2btn").click(function() {<br>
-                        &emsp;$("#tamaño").animate({fontSize:'2.4em',width:400,padding:24}, 2500);<br>
+                    <span class="methods">$</span>(<span class="string_parameter">"#test2btn"</span>).<span class="methods">click</span>(<span class="function">function</span>() {<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#tamaño"</span>).<span class="methods">animate</span>({<span class="var_parameter">fontSize:</span> <span class="string_parameter">'2.4em'</span>, <span class="var_parameter">width:</span>
+                        <span class="number_parameter">400</span>, <span class="var_parameter">padding:</span><span class="number_parameter"> 24</span>}, <span class="number_parameter">2500</span>);<br>
                     });
                 </p>
                 <div id="tamaño" class="bloque">Bloque</div>
@@ -281,14 +282,14 @@
                     "dblclick" (doble clic) para realizar el fadeIn.
                 </p>
                 <p class="code">
-                    //Ocultar con FadeOut<br>
-                    $("#fadebtn").click(function() {<br>
-                        &emsp;$("#fade").fadeOut(3000);<br>
+                    <span class="comment">//Ocultar con FadeOut</span><br>
+                    <span class="methods">$</span>(<span class="string_parameter">"#fadebtn"</span>).<span class="methods">click</span>(<span class="function">function</span>() {<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#fade"</span>).<span class="methods">fadeOut</span>(<span class="number_parameter">3000</span>);<br>
                     });<br><br>
                     
-                    //Mostrar con FadeIn<br>
-                    $("#fadebtn").dblclick(function() {<br>
-                        &emsp;$("#fade").fadeIn(3000);<br>
+                    <span class="comment">//Mostrar con FadeIn</span><br>
+                    <span class="methods">$</span>(<span class="string_parameter">"#fadebtn"</span>).<span class="methods">dblclick</span>(<span class="function">function</span>() {<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#fade"</span>).<span class="methods">fadeIn</span>(<span class="number_parameter">3000</span>);<br>
                     });<br>
                 </p>
                 <div id="fade" class="bloque">Bloque</div>
@@ -302,14 +303,14 @@
                     "movebtn".
                 </p>
                 <p class="code">
-                    $("#movebtn").click(function(){<br>
-                        &emsp;$("#move").animate({opacity: "0.1", left: "+=400",fontSize:'1em',width: "200"}, 1200)<br>
-                        &emsp;.animate({opacity: "0.4", top: "+=160", height: "20", width: "80",fontSize:'0.5em'}, "slow")<br>
-                        &emsp;.animate({opacity: "1", left: "0", width: "260"}, "slow")<br>
-                        &emsp;.animate({top: "0",width: "260",fontSize:'1.2em'}, "fast")<br>
-                        &emsp;.slideUp()<br>
-                        &emsp;.slideDown(1800)<br>
-                        &emsp;return false;<br>
+                    <span class="methods">$</span>(<span class="string_parameter">"#movebtn"</span>).<span class="methods">click</span>(<span class="function">function</span>(){<br>
+                        &emsp;<span class="methods">$</span>(<span class="string_parameter">"#move"</span>).<span class="methods">animate</span>({<span class="var_parameter">opacity:</span> <span class="string_parameter">"0.1"</span>, <span class="var_parameter">left:</span> <span class="string_parameter">"+=400"</span>,<span class="var_parameter">fontSize:</span><span class="string_parameter">'1em'</span>, <span class="var_parameter">width:</span> <span class="string_parameter">"200"</span>}, <span class="number_parameter">1200</span>)<br>
+                        &emsp;.<span class="methods">animate</span>({<span class="var_parameter">opacity:</span> <span class="string_parameter">"0.4"</span>, <span class="var_parameter">top:</span> <span class="string_parameter">"+=160"</span>, <span class="var_parameter">height:</span> <span class="string_parameter">"20"</span>, <span class="var_parameter">width:</span> <span class="string_parameter">"80"</span>, <span class="var_parameter">fontSize:</span> <span class="string_parameter">'0.5em'</span>}, <span class="string_parameter">"slow"</span>)<br>
+                        &emsp;.<span class="methods">animate</span>({<span class="var_parameter">opacity:</span> <span class="string_parameter">"1"</span>, <span class="var_parameter">left:</span> <span class="string_parameter">"0"</span>, <span class="var_parameter">width:</span> <span class="string_parameter">"260"</span>}, <span class="string_parameter">"slow"</span>)<br>
+                        &emsp;.<span class="methods">animate</span>({<span class="var_parameter">top:</span> <span class="string_parameter">"0"</span>, <span class="var_parameter">width:</span> <span class="string_parameter">"260"</span>, <span class="var_parameter">fontSize:</span> <span class="string_parameter">'1.2em'</span>}, <span class="string_parameter">"fast"</span>)<br>
+                        &emsp;.<span class="methods">slideUp</span>()<br>
+                        &emsp;.<span class="methods">slideDown</span>(<span class="number_parameter"><span class="number_parameter">2500</span></span>)<br>
+                        &emsp;<span class="return">return</span> <span class="function">false</span>;<br>
                     });
                 </p>
                 <div id="move" class="bloque">Bloque</div>
